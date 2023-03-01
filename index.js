@@ -25,7 +25,7 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
-app.get("/api/:date?",(req,res)=>{
+app.get("/api/:date",(req,res)=>{
   let unixTimestamp;
   let utcDate;
   res.set({'Content-Type':'application/json'})
